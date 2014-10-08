@@ -32,7 +32,7 @@ while x == True:
 	n = requests.get('https://blockchain.info/stats?format=json')
 	jdatanow = n.json()
 	now = jdatanow['market_price_usd']
-	if initial-now <= -1 or initial-now >= 1:
+	if initial-now <= -100 or initial-now >= 100:
 		yo_all()
 		getvalue()
 	
