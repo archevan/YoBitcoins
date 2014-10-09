@@ -24,6 +24,7 @@ def getvalue():
 	print "Market Value in U.S. dollars" + initial
 
 getvalue()
+global initial
 
 def yo_all():
 	requests.post('http://api.justyo.co/yoall', data={'api_token': apikey.api_token,'link': 'https://blockchain.info/charts/market-price'}) # Send Yo to all
